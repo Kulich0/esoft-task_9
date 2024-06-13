@@ -1,6 +1,7 @@
 const { users } = require('./UserDAL');
 
 class CarDAL {
+    
     async getAll(userId) {
         const user = users.find(user => user.id === parseInt(userId));
         if (!user) {
